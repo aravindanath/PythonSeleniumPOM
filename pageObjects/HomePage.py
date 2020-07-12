@@ -15,6 +15,10 @@ class HomePage:
     mobileNumField = (By.CSS_SELECTOR,"#loginfirst_mobileno")
 
     singInButton = (By.XPATH, "//span[text()='Hello, Sign in']")
+
+
+
+
     # * will help in deSerelation > driver.find_elements_by_CSS_SELECTOR("#rel_pincode")
     def pinCode(self):
         return self.driver.find_element(*HomePage.pinCodeTextField)
@@ -28,10 +32,8 @@ class HomePage:
     def signInYourAddress(self):
         return self.driver.find_element(*HomePage.signInToYourAddress)
 
-
     def mobileNumField(self):
         return self.driver.find_element(*HomePage.mobileNumField)
-
 
     def searchField(self):
         return self.driver.find_element(*HomePage.search)
